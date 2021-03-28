@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  grid-area: n;
+  background-color: rgb(20, 18, 26);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 3px;
+  padding: 0.8rem;
+}
+.nav ul {
+  margin-top: 20%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
+.item a {
+  color: rgb(194, 195, 214);
+  font-size: 1.3em;
+  transition: all 0.3s ease-in-out;
+  padding-bottom: 2%;
+}
+.item a:hover {
+  transform: scale(1.1);
+  color: gold;
+}
+.item a.active {
+  color: gold;
+}

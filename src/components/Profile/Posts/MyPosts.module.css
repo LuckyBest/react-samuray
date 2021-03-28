@@ -1,0 +1,12 @@
+.item {
+  color: green;
+  display: flex;
+}
+.item img {
+  width: 50px;
+  height: 43px;
+  border-radius: 50%;
+}
+.item p {
+  margin-left: 1rem;
+}
