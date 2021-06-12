@@ -1,23 +1,13 @@
 import React from "react";
-import MyPosts from "./Posts/MyPosts";
+import MyPostsContainer from "./Posts/MyPostsContainer";
 import classes from "./Profile.module.css";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-const Profile = () => {
+const Profile = (props) => {
   return (
-    <div>
-      <img
-        src="https://th.bing.com/th/id/OIP.W8apTKARTqVhmLzMCisNmAHaEs?w=284&h=181&c=7&o=5&dpr=1.25&pid=1.7"
-        alt="bgc"
-        className={classes.bgc}
-      />
-      <div>
-        <img
-          src="https://www.nme.com/wp-content/uploads/2020/10/Boris_Spitting_Image.jpg"
-          alt="avatar"
-          className={classes.avatar}
-        />
-      </div>
-      <MyPosts />
+    <div className={classes.profileWrapper}>
+      <ProfileInfo />
+      <MyPostsContainer store={props.store} />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 .item {
-  color: green;
+  color: gold;
   display: flex;
 }
 .item img {
@@ -9,4 +9,8 @@
 }
 .item p {
   margin-left: 1rem;
+}
+.likes {
+  display: flex;
+  align-items: center;
 }

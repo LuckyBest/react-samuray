@@ -1,10 +1,11 @@
+.profileWrapper {
+  display: grid;
+  grid-template-areas:
+    "profileInfo"
+    "myPost";
+  grid-template-rows: 500px 1fr;
+}
+
 .content {
   width: 100%;
-}
-.bgc {
-  width: 100%;
-  height: 100px;
-}
-.avatar {
-  width: 150px;
 }
